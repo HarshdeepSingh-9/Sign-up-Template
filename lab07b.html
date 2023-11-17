@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            background-image: url(back.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: static;
+        }
+        .satisfy{
+            font-family: 'Satisfy';
+        }
+        .heading{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 50px;
+            font-weight: bolder;
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            background-color: #ffffff76;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .submitted-info {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.378);
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            color: #8b8b1a;
+          
+          }
+          
+          
+          .social {
+            border-color: beigex;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+          }
+          
+          .social .git,
+          .linkdln,
+          .gmail,
+          .codewar,
+          .doodle {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 8px;
+          
+          
+          }
+          
+          .social {
+            list-style: none;
+            padding: 2;
+            text-align: center;
+          }
+          
+          .social li {
+            display: inline-block;
+            margin-right: 15px;
+          
+          }
+          
+          .gmail:hover,
+          .codewar:hover,
+          .doodle:hover,
+          .linkdln:hover,
+          .git:hover {
+            width: 45px;
+          }          
+    </style>
+</head>
+<body>
+    <h1 class=" heading satisfy">Thank You, For Joining Us In This Journey</h1>
+    <div class="container">
+        <h2 class="mb-4">Customer Registration</h2>
+
+        <form action="http://www2.scs.ryerson.ca/~h237sing/cgi-bin/lab07b.cgi" method="post" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name:</label>
+                <input type="text" class="form-control" name="firstName" placeholder="John" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" name="lastName" placeholder="Watt" required>
+            </div>
+            
+
+            <div class="mb-3">
+                <label for="street" class="form-label">Street Name:</label>
+                <input type="text" class="form-control" name="street" placeholder="123 Main St" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="city" class="form-label">City:</label>
+                <input type="text" class="form-control" name="city" placeholder="town/city" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="postalCode" class="form-label">Postal Code:</label>
+                <input type="text" class="form-control" name="postalCode" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" title="Enter a valid postal code (e.g., L0L 0L0)" placeholder="A1A 1A1" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="province" class="form-label">Province:</label>
+                <select class="form-select" name="province" required>
+                    <option value="ontario">Ontario</option>
+                    <option value="quebec">Quebec</option>
+                    <option value="calgary">Calgary</option>
+                    <option value="vancouver">Vancouver</option>
+                    <option value="new brunswick">New Brunswick</option>
+                    <option value="Nova Scotia">Nova Scotia</option>
+                   
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" class="form-control" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="photo" class="form-label">Photograph:</label>
+                <input type="file" class="form-control" name="photo" accept="image/*">
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+    <section id="contact">
+        <div class="social">
+            <ul>
+                <li><a href="mailto:Harsh.ds099@gmail.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" class="gmail">
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/harshdeep-singh-047140253/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png?20140125013055"
+                            class="linkdln">
+                    </a></li>
+                <li><a href="https://www.codewars.com/users/Harshdeep_Singh9/stats" target="_blank">
+                        <img src="https://camo.githubusercontent.com/8360378633b181a72b68e917e9a8da0945c0794bd6bc3dcc5a5e41b87e778fcc/68747470733a2f2f7777772e636f6465776172732e636f6d2f7061636b732f6173736574732f6c6f676f2e36313139326366372e737667"
+                            class="codewar">
+                    </a></li>
+                <li><a href="https://github.com/HarshdeepSingh-9" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+                            class="git">
+                    </a></li>
+                <li><a href="https://calendly.com/harshdeepsingh3109/45_mins?month=2023-09" target="_blank">
+                        <img src="https://play-lh.googleusercontent.com/jpE-y-foUpc1tesYh02whiyk1tMIiCC_4daf9BD6dFoie1M1wwz1XSjgBUWICpO9xQ"
+                            class="doodle">
+                    </a></li>
+                <p>&copy; 2023 Harshdeep Singh | All Rights Reserved</p>
+            </ul>
+        </div>
+    </section>
+</footer>
+</html>
+
